@@ -1,0 +1,1567 @@
+[
+  {
+    "id": 1,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿Qué es la multiplexación en telecomunicaciones?",
+    "opciones": [
+      "Permite transmitir dos o más señales portadoras por el mismo medio físico al mismo tiempo",
+      "Es el proceso de convertir una señal digital en analógica",
+      "Es la amplificación del voltaje en una señal electromagnética",
+      "Es la eliminación del ruido de fondo en cables coaxiales"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La multiplexación permite aprovechar mejor un medio de transmisión compartiendo el canal entre varias señales mediante distintas frecuencias u otras técnicas."
+  },
+  {
+    "id": 2,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿En qué consiste la multiplexación por división de frecuencia (FDM)?",
+    "opciones": [
+      "Se asignan diferentes intervalos de tiempo a cada señal",
+      "Se asignan diferentes frecuencias a las señales que comparten el medio",
+      "Se asignan códigos numéricos únicos a cada transmisor",
+      "Se transmite una sola señal a través de múltiples cables en paralelo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En FDM, cada señal ocupa una banda de frecuencia diferente, por lo que pueden viajar simultáneamente sin mezclarse."
+  },
+  {
+    "id": 3,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿Qué se entiende por atenuación en un medio de transmisión?",
+    "opciones": [
+      "Es el aumento intencional del ancho de banda",
+      "Es la pérdida o disminución de potencia de una señal a medida que se transmite por un medio",
+      "Es la interferencia producida por motores eléctricos",
+      "Es la conversión de datos binarios a señales de radio"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "En cables largos la señal pierde potencia. Para compensarla se pueden utilizar amplificadores o repetidores."
+  },
+  {
+    "id": 4,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿Qué es el ancho de banda en un canal de comunicación?",
+    "opciones": [
+      "La distancia física máxima en metros que puede recorrer un cable",
+      "El espectro o segmento de frecuencias que puede utilizar un canal de comunicación",
+      "La cantidad de computadoras conectadas a una misma topología",
+      "El voltaje eléctrico máximo soportado por los conectores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Cuanto mayor sea el ancho de banda disponible, mayor será la capacidad de transmisión del canal."
+  },
+  {
+    "id": 5,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿Qué es una señal portadora?",
+    "opciones": [
+      "Un protocolo encargado del direccionamiento IP",
+      "Una señal utilizada para transportar información modificando sus características mediante modulación",
+      "Un conector físico en los extremos del cableado",
+      "Un paquete de datos destruido durante una colisión"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La información se incorpora a la señal portadora mediante modulación para ser transmitida por el medio."
+  },
+  {
+    "id": 6,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿Cuál es la función principal de un demodulador?",
+    "opciones": [
+      "Amplificar la señal eléctrica antes de enviarla a la antena",
+      "Recuperar la información original contenida en una señal modulada",
+      "Dividir el paquete de datos en tramas más pequeñas",
+      "Calcular la dirección IP del destinatario"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El modulador coloca la información sobre la portadora; el demodulador realiza el proceso inverso en la recepción."
+  },
+  {
+    "id": 7,
+    "categoria": "Conceptos Fundamentales",
+    "pregunta": "¿Cómo se define la teleinformática o telemática?",
+    "opciones": [
+      "Es la convergencia entre las telecomunicaciones y el procesamiento de información",
+      "Es el diseño exclusivo de procesadores de computadora",
+      "Es la fabricación de cables de fibra óptica",
+      "Es la programación de sitios web cliente-servidor"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Permite la comunicación y el intercambio de información entre sistemas informáticos distribuidos."
+  },
+  {
+    "id": 8,
+    "categoria": "Modelo OSI",
+    "pregunta": "¿Qué capa del modelo OSI establece, mantiene y libera una sesión de comunicación?",
+    "opciones": [
+      "Física",
+      "Enlace",
+      "Transporte",
+      "Capa de Sesión"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La capa de Sesión administra el establecimiento, mantenimiento y finalización de las sesiones de comunicación."
+  },
+  {
+    "id": 9,
+    "categoria": "Modelo OSI",
+    "pregunta": "¿Qué características define la capa física del modelo OSI?",
+    "opciones": [
+      "Características mecánicas, eléctricas y funcionales de la conexión",
+      "Direccionamiento lógico IP y tablas de ruteo",
+      "Cifrado y compresión de archivos",
+      "Sesiones de usuario y autenticación"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La capa física trabaja con la transmisión de bits y define aspectos mecánicos y eléctricos del medio de transmisión."
+  },
+  {
+    "id": 10,
+    "categoria": "Modelo OSI",
+    "pregunta": "¿Qué capa del modelo OSI se ocupa de la encriptación y desencriptación de los datos?",
+    "opciones": [
+      "Aplicación",
+      "Capa de Presentación",
+      "Red",
+      "Transporte"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La capa de Presentación se ocupa de la representación de los datos y realiza funciones de cifrado, compresión y conversión de formatos."
+  },
+  {
+    "id": 11,
+    "categoria": "Modelo OSI",
+    "pregunta": "¿Cuál de las siguientes es una función principal de la capa de Transporte?",
+    "opciones": [
+      "Definir los voltajes del cable de red",
+      "Detección de errores de extremo a extremo y ordenamiento de los paquetes",
+      "Asignar nombres de dominio a direcciones IP",
+      "Instalar los drivers de la placa de red"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La capa de Transporte busca proporcionar una comunicación confiable de extremo a extremo controlando errores y orden de entrega."
+  },
+  {
+    "id": 12,
+    "categoria": "Modelo OSI",
+    "pregunta": "¿Qué capa del modelo OSI determina campos relacionados con el direccionamiento y encaminamiento de paquetes?",
+    "opciones": [
+      "Capa de Red",
+      "Capa de Enlace",
+      "Capa Física",
+      "Capa de Sesión"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La capa de Red trabaja con el direccionamiento lógico (direcciones IP) y determina las rutas óptimas para los paquetes."
+  },
+  {
+    "id": 13,
+    "categoria": "Modelo OSI",
+    "pregunta": "Las pilas de protocolos basadas en modelos estándar están unidas a través de la capa física.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. En la arquitectura de modelos estándar como OSI, las pilas de protocolos físicas se conectan e interconectan a través del medio físico."
+  },
+  {
+    "id": 14,
+    "categoria": "Modelo OSI",
+    "pregunta": "¿Cuáles son las tres fases básicas de una sesión de comunicación?",
+    "opciones": [
+      "Establecimiento, Transferencia y Liberación",
+      "Compresión, Encriptación y Decodificación",
+      "Multiplexación, Modulación y Demodulación",
+      "Detección, Corrección y Aumento"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Las tres etapas fundamentales de la capa de sesión son el establecimiento, la transferencia de datos y la liberación de la sesión."
+  },
+  {
+    "id": 15,
+    "categoria": "Ethernet y Topologías",
+    "pregunta": "En una red Ethernet fino implementada sobre topología bus, ¿qué ocurre si se corta un tramo del cable?",
+    "opciones": [
+      "La red queda segmentada en dos partes e inoperativa",
+      "Las computadoras continúan comunicándose sin problemas",
+      "Aumenta la velocidad de transmisión",
+      "Se cambia automáticamente a fibra óptica"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En una topología bus todos los equipos comparten el mismo medio. Un corte interrumpe la continuidad del bus dejando inoperativos los segmentos."
+  },
+  {
+    "id": 16,
+    "categoria": "Ethernet y Topologías",
+    "pregunta": "¿Qué define a una topología de red en bus?",
+    "opciones": [
+      "Es una topología donde todos los dispositivos están conectados a un mismo cable o medio compartido",
+      "Cada máquina está conectada individualmente a un switch central mediante cables dedicados",
+      "Cada computadora está conectada únicamente a dos computadoras vecinas formando un círculo",
+      "Una red inalámbrica donde no existen cables físicos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los datos circulan por un medio común y se colocan terminadores en los extremos para evitar reflexiones."
+  },
+  {
+    "id": 17,
+    "categoria": "Ethernet y Topologías",
+    "pregunta": "¿Para qué sirven los terminadores en una topología bus?",
+    "opciones": [
+      "Evitan que la señal se refleje en los extremos del cable",
+      "Aumentan el voltaje de la señal recibida",
+      "Asignan direcciones IP a los nodos",
+      "Conectan la red local directamente a Internet"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los terminadores resistivos (ej. 50 Ω) absorben las señales al llegar a los extremos del cable evitando rebotes/reflexiones."
+  },
+  {
+    "id": 18,
+    "categoria": "Ethernet y Topologías",
+    "pregunta": "¿Qué sucede ante un corte físico en un tendido de red con topología bus?",
+    "opciones": [
+      "Se produce una segmentación de la red y pérdida de impedancia",
+      "El router redirige el tráfico por vía inalámbrica",
+      "No afecta el funcionamiento de la red",
+      "La velocidad aumenta al haber menos nodos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El cable deja de formar un camino continuo con impedancia adaptada, provocando la segmentación y falla de comunicación."
+  },
+  {
+    "id": 19,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué es un protocolo en redes de computadoras?",
+    "opciones": [
+      "Un conjunto de reglas y procedimientos que permiten la comunicación entre dispositivos",
+      "Un programa antivirus instalado en el servidor",
+      "El cable físico por donde viajan los electrones",
+      "Una unidad de almacenamiento en disco rígido"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Un protocolo establece las reglas para que dos o más sistemas puedan entenderse e intercambiar información."
+  },
+  {
+    "id": 20,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué funciones cumple un protocolo de comunicación?",
+    "opciones": [
+      "Establecer el canal, transmitir, verificar y finalizar la comunicación",
+      "Formatos exclusivos de hojas de cálculo",
+      "Controlar únicamente el brillo de las pantallas",
+      "Convertir corriente alterna a continua"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los protocolos norman desde la apertura del canal hasta el chequeo de errores y el cierre de la conexión."
+  },
+  {
+    "id": 21,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué es un paquete en el contexto de redes?",
+    "opciones": [
+      "Es una unidad de información formateada que se transmite a nivel de la capa de red",
+      "Un archivo comprimido en formato .zip",
+      "Un programa ejecutable .exe",
+      "Un conector físico en el patch panel"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los datos se dividen en paquetes (PDU de capa de red) con cabeceras de direccionamiento para viajar por la red."
+  },
+  {
+    "id": 22,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué efecto provocan las interferencias electromagnéticas durante una transmisión de datos?",
+    "opciones": [
+      "Pueden alterar el voltaje y provocar errores en los bits transmitidos",
+      "Aumentan automáticamente el ancho de banda del canal",
+      "Duplican la velocidad de procesamiento del CPU",
+      "No generan ningún efecto sobre los datos"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El ruido electromagnético puede modificar valores de bits (cambiar 0 por 1 o viceversa)."
+  },
+  {
+    "id": 23,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué es y para qué se utiliza el bit de paridad?",
+    "opciones": [
+      "Es un mecanismo sencillo para detectar errores agregando un bit adicional a los datos",
+      "Es un código para encriptar claves bancarias",
+      "Un bit que indica la velocidad de la placa de red",
+      "El primer bit que indica la dirección IP"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Permite verificar si el número de unos es par o impar para detectar errores de un solo bit."
+  },
+  {
+    "id": 24,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué mide la distancia de Hamming entre dos cadenas de bits?",
+    "opciones": [
+      "La cantidad de posiciones en las que dos cadenas de bits de igual longitud difieren",
+      "La longitud física en metros del cable de cobre",
+      "El tiempo de retardo en milisegundos de un paquete",
+      "La cantidad máxima de usuarios en un servidor"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Permite medir el número de bits cambiados entre dos palabras de código para analizar su capacidad de detección/corrección."
+  },
+  {
+    "id": 25,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Dónde se ubica el código de redundancia cíclica (CRC) en una trama o bloque de datos?",
+    "opciones": [
+      "Al final del bloque de datos (FCS / Trailer)",
+      "En el primer byte de la cabecera IP",
+      "En el centro del contenido útil (Payload)",
+      "No forma parte del mensaje transmitido"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El emisor calcula el valor CRC y lo adosa al final de la trama para que el receptor pueda validar la integridad de los datos."
+  },
+  {
+    "id": 26,
+    "categoria": "Protocolos y Control",
+    "pregunta": "¿Qué ocurre cuando se utiliza un algoritmo de retardo aleatorio/variable (Backoff) tras una colisión?",
+    "opciones": [
+      "Permite evitar o reducir nuevas colisiones inmediatas entre los transmisores",
+      "Provoca la desconexión permanente del puerto",
+      "Obliga a cambiar el cable UTP por fibra óptica",
+      "Duplica la potencia del transmisor"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En algoritmos como CSMA/CD, cada equipo espera un tiempo aleatorio diferente antes de reintentar, evitando colisionar nuevamente."
+  },
+  {
+    "id": 27,
+    "categoria": "Organizaciones y Estándares",
+    "pregunta": "¿Qué es un estándar de red?",
+    "opciones": [
+      "Un conjunto de normas y especificaciones que permiten la interoperabilidad entre dispositivos de distintos fabricantes",
+      "La marca comercial de una placa de red",
+      "La contraseña por defecto de un router",
+      "El costo mensual de la conexión a Internet"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Los estándares aseguran que equipos de diferentes marcas se entiendan correctamente."
+  },
+  {
+    "id": 28,
+    "categoria": "Organizaciones y Estándares",
+    "pregunta": "¿Qué organización comercial provee servicios y acceso a Internet a sus suscriptores?",
+    "opciones": [
+      "ISP (Internet Service Provider)",
+      "IETF",
+      "IEEE",
+      "ICANN"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Un ISP brinda acceso y conectividad a la red de Internet a usuarios y empresas."
+  },
+  {
+    "id": 29,
+    "categoria": "Organizaciones y Estándares",
+    "pregunta": "¿Qué es un NAP (Network Access Point)?",
+    "opciones": [
+      "Un punto o centro de intercambio donde distintas redes y proveedores pueden interconectarse",
+      "Un conector para cables de fibra óptica en el exterior",
+      "Un software para editar archivos JSON",
+      "Un protocolo de enrutamiento inalámbrico"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Un NAP o IXP facilita la interconexión entre diferentes operadores mediante acuerdos de peering."
+  },
+  {
+    "id": 30,
+    "categoria": "Organizaciones y Estándares",
+    "pregunta": "La red troncal digital de alta capacidad nacional reservada para la comunidad académica e investigación de Argentina es:",
+    "opciones": [
+      "Abilene",
+      "Innova Red",
+      "CLARA",
+      "ArPAC"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Innova Red es la red académica avanzada de la República Argentina."
+  },
+  {
+    "id": 31,
+    "categoria": "Organizaciones y Estándares",
+    "pregunta": "Respecto a los puntos de acceso e intercambio de Internet, la opción correcta correspondiente a los conceptos de NAP, NXP y acuerdos de peering es:",
+    "opciones": [
+      "A, B y C son correctas",
+      "ACDIE (A, C, D e I/E son correctas)",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Corresponde a la opción combinada ACDIE acordada para tu examen."
+  },
+  {
+    "id": 32,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "En una topología en estrella, el componente de hardware que se caracteriza por hacer difusión de los paquetes (no conmuta) y que conecta los equipos terminales a la misma, se lo denomina:",
+    "opciones": [
+      "Concentrador",
+      "Enlace de comunicaciones",
+      "Equipo terminal",
+      "Multiplexación",
+      "Orden de acceso",
+      "Monitor",
+      "A, B y C son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El hub o concentrador recibe una señal por un puerto y la difunde por los demás puertos. A diferencia del switch, no conmuta."
+  },
+  {
+    "id": 33,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "Dentro de una topología de red de anillo, el control de conexión de los nodos se puede realizar por:",
+    "opciones": [
+      "Control centralizado",
+      "Control monitoreado",
+      "Control a través de computadora Stand Alone",
+      "Multiplexación",
+      "Control distribuido",
+      "A y E son correctas (Centralizado y Distribuido)",
+      "B y C son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 5,
+    "explicacion": "En una red de anillo, el control puede ser centralizado o distribuido (como sucede con mecanismos de paso de ficha/token)."
+  },
+  {
+    "id": 34,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "Para extender una LAN y unir dos segmentos de la red a una distancia superior de 600 metros podemos utilizar:",
+    "opciones": [
+      "Dos módems y cableado de fibra",
+      "Solamente cable UTP par trenzado",
+      "Dos transceivers y cableado de fibra",
+      "Solamente cable coaxial fino con dos terminadores",
+      "B y D son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El UTP soporta máx ~100 metros por segmento. La fibra óptica permite cubrir distancias mayores adaptada con transceivers."
+  },
+  {
+    "id": 35,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "Un dispositivo de red que se desempeña como bridge trabaja dentro del modelo OSI desde la capa física hasta la capa de enlace de datos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. El bridge opera principalmente en la Capa 2 (Enlace de Datos), aunque utiliza la Capa 1 (Física) para transmitir y recibir la señal."
+  },
+  {
+    "id": 36,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "En una red de topología estrella, el componente de software que realiza la administración y autenticación de los accesos a los recursos de la red, utilizando los perfiles de los usuarios, se denomina:",
+    "opciones": [
+      "Nodo",
+      "Enlace de comunicaciones",
+      "Equipo terminal",
+      "Multiplexor",
+      "Access Server",
+      "Monitor",
+      "Active Directory",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 6,
+    "explicacion": "Active Directory permite administrar usuarios, equipos, grupos y recursos de una red, además de gestionar la autenticación y permisos."
+  },
+  {
+    "id": 37,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "Un dispositivo de red que se desempeña como router trabaja dentro del modelo OSI desde la capa física hasta la capa de enlace de datos.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Falso. El router opera principalmente en la Capa 3 (Red) del modelo OSI para encaminar paquetes entre diferentes redes mediante direcciones IP."
+  },
+  {
+    "id": 38,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "Dentro de un nodo de varios servidores con mucha carga de procesamiento, puede existir una computadora dedicada exclusivamente a las comunicaciones con el mundo exterior. Se la denomina:",
+    "opciones": [
+      "Nodo",
+      "Hub",
+      "Access Server",
+      "Switch",
+      "Procesador Front-End",
+      "Monitor",
+      "Server",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 4,
+    "explicacion": "El Front-End Processor (FEP) es una computadora dedicada a gestionar las comunicaciones externas, liberando al servidor principal."
+  },
+  {
+    "id": 39,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "Dentro de los indicadores de control de un hub/concentrador existe aquel que mide el nivel de colisiones.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. Al compartir un único dominio de colisión, los hubs suelen contar con indicadores LED de colisión y actividad."
+  },
+  {
+    "id": 40,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "El componente de hardware que mantiene la computadora conectada físicamente a la red y realiza el filtrado de paquetes para entregar al procesador y a la memoria aquellos destinados al ordenador en cuestión se denomina:",
+    "opciones": [
+      "Conector",
+      "Transceiver",
+      "Interfaz de red (NIC)",
+      "Bus de entrada/salida",
+      "RS-232",
+      "Vampiro",
+      "Hub",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La interfaz de red (NIC) conecta la computadora al medio físico y filtra las tramas destinadas a la dirección MAC del equipo."
+  },
+  {
+    "id": 41,
+    "categoria": "Dispositivos de Red",
+    "pregunta": "El componente teleinformático de red que permite entregar señal de datos/canal de comunicaciones bajo difusión, compensa la velocidad de los distintos medios físicos conectados al mismo y realiza la ampliación de la señal para retransmitirla, se denomina:",
+    "opciones": [
+      "Módem",
+      "Router",
+      "Transceiver",
+      "Terminador",
+      "Vampiro",
+      "Hub",
+      "LAN Driver",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 5,
+    "explicacion": "El hub o concentrador recibe una señal, la amplifica/regenera y la difunde hacia todos los demás puertos del equipo."
+  },
+  {
+    "id": 42,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "Dentro de las ventajas de la telefonía IP podemos detallar:",
+    "opciones": [
+      "A) Arquitectura abierta",
+      "B) Arquitectura cerrada",
+      "C) Interfaces estándares",
+      "D) Dependencia de un fabricante único",
+      "E) Escalabilidad y flexibilidad",
+      "F) Desarrollo rápido de aplicaciones",
+      "A, C, E y F son correctas",
+      "B, D, E y F son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 6,
+    "explicacion": "La telefonía IP ofrece arquitectura abierta, estándares, escalabilidad, flexibilidad y facilita el desarrollo de aplicaciones."
+  },
+  {
+    "id": 43,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "Dentro de la estructura de telefonía IP, protocolo H.323, las funciones de procesamiento de llamadas, señalización, control de llamada, control de medio, programación de interfaces y configuración mediante navegador son realizadas por:",
+    "opciones": [
+      "Conversor analógico-digital",
+      "Switch",
+      "Call Manager",
+      "Web Manager",
+      "Softphone",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El Call Manager administra funciones centrales de la telefonía IP, como llamadas, señalización y control de medios."
+  },
+  {
+    "id": 44,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "El objetivo de instalar un encaminador/router incluye: segmentar grandes redes, actuar como barrera de seguridad, evitar sobrecargas direccionando tráfico y permitir el salto a otra red.",
+    "opciones": [
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El router interconecta redes, encamina paquetes y ayuda a limitar el tráfico de difusión separando dominios de red."
+  },
+  {
+    "id": 45,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "El dispositivo utilizado para extender una LAN, conectar dos segmentos y regenerar/amplificar la señal se denomina:",
+    "opciones": [
+      "Gateway",
+      "Router",
+      "Transceiver",
+      "Terminador",
+      "Monitor de red",
+      "Hub",
+      "LAN Driver / Repetidor",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 6,
+    "explicacion": "El repetidor trabaja en la Capa 1 (Física) y regenera la señal para extender la distancia de la red."
+  },
+  {
+    "id": 46,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "El tipo de router que determina rutas automáticamente, con alternativas y cálculos de costos, requiriendo una mínima configuración, se denomina:",
+    "opciones": [
+      "Configurable",
+      "Estático",
+      "Dinámico",
+      "Adaptable",
+      "Virtual",
+      "Real",
+      "Primario",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Un router dinámico utiliza protocolos de enrutamiento para determinar automáticamente las mejores rutas según diferentes métricas o costos."
+  },
+  {
+    "id": 47,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "Cada teléfono registrado tiene una o dos copias de seguridad, proporcionando niveles de redundancia. Esta característica se denomina:",
+    "opciones": [
+      "Backup sobre IP",
+      "Terminal de backup",
+      "Cluster redundante en disposición de N+1",
+      "Softphone",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Un cluster redundante N+1 permite disponer de servidores de respaldo para mantener la disponibilidad del servicio si falla el servidor principal."
+  },
+  {
+    "id": 48,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "Para reutilizar teléfonos analógicos de una instalación PBX/analógica en una red IP debemos utilizar:",
+    "opciones": [
+      "Conversor analógico-digital (ATA)",
+      "Transceiver",
+      "Adquirir un teléfono IP",
+      "Instalar un softphone",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Un ATA (Analog Telephone Adapter) permite conectar un teléfono analógico tradicional a una red IP, convirtiendo las señales."
+  },
+  {
+    "id": 49,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "Para conectar dos redes LAN heterogéneas, que utilizan distinta arquitectura, protocolos y formato de datos, utilizamos:",
+    "opciones": [
+      "Gateway",
+      "Router",
+      "Bridge",
+      "Terminador",
+      "Monitor de red",
+      "Hub",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "El gateway (puerta de enlace) conecta redes con diferentes arquitecturas, protocolos o formatos de datos, haciendo la traducción necesaria."
+  },
+  {
+    "id": 50,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "El dispositivo multipuerto que actúa como eje de conmutación, simulando la separación de segmentos de red y funcionando como microsegmentador para permitir el envío de datos a alta velocidad se denomina:",
+    "opciones": [
+      "Gateway",
+      "Router",
+      "Bridge",
+      "Terminador",
+      "Monitor de red",
+      "Hub",
+      "Switch",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 6,
+    "explicacion": "El switch es un dispositivo multipuerto que conmuta tramas y realiza microsegmentación eliminando las colisiones."
+  },
+  {
+    "id": 51,
+    "categoria": "Telefonía IP y Redes",
+    "pregunta": "Para conectar dos redes LAN homogéneas, que utilizan la misma arquitectura, protocolo y formato de datos, utilizamos:",
+    "opciones": [
+      "Gateway",
+      "Router",
+      "Bridge",
+      "Terminador",
+      "Monitor de red",
+      "Hub",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El bridge (puente) conecta segmentos de redes homogéneas trabajando a nivel de la Capa 2 (Enlace de Datos)."
+  },
+  {
+    "id": 52,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Las redes WPAN permiten interconectar dispositivos personales eliminando cables. El mouse Macintosh utiliza como tecnología inalámbrica de corto alcance:",
+    "opciones": [
+      "Zigbee",
+      "Z-Wave",
+      "Bluetooth",
+      "802.11n",
+      "802.11ax",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Bluetooth es una tecnología inalámbrica de corto alcance (WPAN) utilizada para conectar periféricos como mouse, teclados y auriculares."
+  },
+  {
+    "id": 53,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Una antena A se comunica con una antena B, pasando por una estación C intermedia que recibe la señal de A y la retransmite hacia B con dos antenas. La estación C actúa como:",
+    "opciones": [
+      "Emisora",
+      "Receptora",
+      "Extensora",
+      "Repetidora",
+      "Multiplexadora",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "C recibe la señal de A y la retransmite hacia B, ampliando el alcance del enlace como estación repetidora."
+  },
+  {
+    "id": 54,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "El elemento inalámbrico que recibe la señal de un Access Point y la vuelve a transmitir para ampliar la cobertura se denomina:",
+    "opciones": [
+      "Emisor-receptor",
+      "Extensor",
+      "Repetidor",
+      "Encriptador",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El repetidor recibe la señal inalámbrica y la retransmite ampliando la zona de cobertura."
+  },
+  {
+    "id": 55,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "El protocolo ALOHA-net ranurado comparte dinámicamente el canal y busca resolver las colisiones detectándolas mediante:",
+    "opciones": [
+      "CSMA/CD",
+      "CSMA/CA",
+      "Token Passing",
+      "PDM",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En este cuestionario la respuesta correcta es CSMA/CD, el cual detecta la colisión y actúa para resolverla mediante retransmisiones."
+  },
+  {
+    "id": 56,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "La técnica que divide el espectro disponible en varias subportadoras ortogonales utilizada en redes Wi-Fi es:",
+    "opciones": [
+      "Espectro expandido de secuencia directa",
+      "CSMA/CA",
+      "Modulación ortogonal de frecuencia (OFDM)",
+      "SCARTENET",
+      "Espectro expandido de salto de frecuencia",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "OFDM (Orthogonal Frequency Division Multiplexing) divide el canal en subportadoras ortogonales para transmitir datos en paralelo."
+  },
+  {
+    "id": 57,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Las frecuencias especificadas en bandas L (1,5/1,6 GHz), S (1,9/2,2 GHz), C (4/6 GHz), Ku (11/14 GHz) y Ka (20/30 GHz) corresponden a comunicaciones:",
+    "opciones": [
+      "Zigbee",
+      "Z-Wave",
+      "Bluetooth",
+      "Satelital",
+      "HomeRF",
+      "802.11ax",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Las bandas L, S, C, Ku y Ka son denominaciones estándar utilizadas en telecomunicaciones satelitales."
+  },
+  {
+    "id": 58,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Un Access Point B recibe la señal inalámbrica de un Access Point A y pertenece a la misma red, funcionando para retransmitir la señal. El AP B funciona como:",
+    "opciones": [
+      "Emisor",
+      "Receptor",
+      "Extensor",
+      "Repetidor",
+      "Encriptador",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "B recibe la señal inalámbrica de A y la retransmite ampliando la cobertura."
+  },
+  {
+    "id": 59,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Las frecuencias de 900 MHz, 2,4 GHz y 5 GHz utilizadas ampliamente por tecnologías como Wi-Fi pertenecen a la categoría de:",
+    "opciones": [
+      "Banda licenciada",
+      "Banda no licenciada (ISM)",
+      "Bandas de comunicación por HF",
+      "Satélites",
+      "Banda de comunicación por VHF",
+      "Bandas de comunicación por MF",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Pertenecen a bandas no licenciadas (ISM) de uso libre siguiendo regulaciones de potencia de transmisión."
+  },
+  {
+    "id": 60,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Las señales de radio de los estándares de redes Wi-Fi IEEE 802.11 operan principalmente en los rangos de frecuencia:",
+    "opciones": [
+      "UHF y SHF",
+      "HF",
+      "VHF",
+      "LF y LF",
+      "MF y HF",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Wi-Fi opera en 2,4 GHz (Ultra High Frequency - UHF) y 5 GHz (Super High Frequency - SHF)."
+  },
+  {
+    "id": 61,
+    "categoria": "Comunicaciones Inalámbricas",
+    "pregunta": "Un punto de acceso inalámbrico público sin restricciones instalado en estaciones de trenes, aeropuertos y plazas se denomina:",
+    "opciones": [
+      "Emisor",
+      "Hotspot",
+      "Extensor",
+      "Repetidor",
+      "Piconet",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un hotspot es una zona de cobertura donde se ofrece acceso a Internet a través de una red Wi-Fi pública o privada."
+  },
+  {
+    "id": 62,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Protocolo asíncrono, half-duplex, basado en IEEE 802.15.4, de baja velocidad y bajo consumo (entre 25 y 250 Kbps) pensado para IoT y domótica:",
+    "opciones": [
+      "Zigbee",
+      "Z-Wave",
+      "Piconet",
+      "NFC",
+      "Wi-Fi 6",
+      "HomeRF",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Zigbee está basado en el estándar IEEE 802.15.4 y diseñado para dispositivos de bajo consumo y domótica/IoT."
+  },
+  {
+    "id": 63,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Las frecuencias de telecomunicaciones celulares utilizadas por las empresas de telefonía móvil corresponden a:",
+    "opciones": [
+      "Bandas licenciadas",
+      "Bandas no licenciadas",
+      "HF",
+      "Satélites",
+      "VHF",
+      "ADF",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La telefonía celular utiliza espectro de frecuencia licenciado y asignado por organismos reguladores del Estado."
+  },
+  {
+    "id": 64,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Una placa de red Wi-Fi 6 presenta las siguientes características: estándar IEEE 802.11ax, frecuencias de 2,4 GHz y 5 GHz, hasta 9,6 Gbps teóricos y modulación 1024-QAM.",
+    "opciones": [
+      "Solo 802.11ax",
+      "Solo 2,4 y 5 GHz",
+      "Solo 9,6 Gbps",
+      "Solo 1024-QAM",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 4,
+    "explicacion": "Wi-Fi 6 (IEEE 802.11ax) opera en 2,4 y 5 GHz, con modulación 1024-QAM y velocidades teóricas de hasta 9,6 Gbps."
+  },
+  {
+    "id": 65,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Dispositivo que se conecta y extiende inalámbricamente el alcance de una red Wi-Fi recibiendo la señal y retransmitiéndola:",
+    "opciones": [
+      "Emisor",
+      "Receptor",
+      "Encriptador",
+      "Repetidor",
+      "Extensor",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "El repetidor recibe la señal inalámbrica y la vuelve a emitir ampliando la cobertura."
+  },
+  {
+    "id": 66,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "La propagación de la onda electromagnética utilizada por estándares Wi-Fi como 802.11ac se clasifica como:",
+    "opciones": [
+      "Por superficie",
+      "Directa",
+      "Ionosférica",
+      "Reflejada",
+      "Ambas, las dos y la opción 4",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las ondas de Wi-Fi en 2,4 y 5 GHz viajan mediante propagación directa (línea de vista/direct wave)."
+  },
+  {
+    "id": 67,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "¿Cuáles de las siguientes funciones pueden ser realizadas por los programas internos de un Access Point de red?: (1) Antivirus, (2) Servidor DHCP, (3) Configuración de VLAN, (4) Firewall.",
+    "opciones": [
+      "Solo la 1",
+      "Solo la 2",
+      "Solo la 3",
+      "La 2 y la 3 son correctas (DHCP y VLAN)",
+      "La 1 y la 4",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Los Access Points avanzados pueden gestionar asignación de IP (DHCP) y etiquetado de redes virtuales (VLAN)."
+  },
+  {
+    "id": 68,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Sistema compuesto por antenas direccionales en línea de vista para establecer comunicaciones a distancias de aproximadamente 50 km:",
+    "opciones": [
+      "Zigbee",
+      "Radioenlace",
+      "Bluetooth",
+      "Z-Wave",
+      "A/B corta E",
+      "802.11ax",
+      "802.11ac",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un radioenlace permite conectar dos puntos alejados mediante antenas direccionales en línea de vista."
+  },
+  {
+    "id": 69,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Una red Bluetooth donde se intercambia información entre un dispositivo maestro y hasta siete dispositivos esclavos activos se denomina:",
+    "opciones": [
+      "Scatternet",
+      "Z-Wave",
+      "Piconet",
+      "NFC",
+      "CSMA/CA",
+      "CSMA/CD",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Una piconet es la red ad-hoc básica de Bluetooth formada por 1 maestro y hasta 7 esclavos activos."
+  },
+  {
+    "id": 70,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Protocolo de red en malla para domótica no estandarizado por IEEE, con alcance aproximado de 40m, peer-to-peer y frecuencias cercanas a 900 MHz:",
+    "opciones": [
+      "Zigbee",
+      "Z-Wave",
+      "802.11ac",
+      "NFC",
+      "UWB",
+      "Belarga",
+      "HomeRF",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Z-Wave es una tecnología propietaria de red en malla diseñada para automatización del hogar (domótica) en frecuencias de ~900 MHz."
+  },
+  {
+    "id": 71,
+    "categoria": "Redes Inalámbricas y Domótica",
+    "pregunta": "Protocolo inalámbrico de muy corto alcance que permite el intercambio de datos mediante inducción electromagnética entre dos antenas de espiral cercanas:",
+    "opciones": [
+      "Zigbee",
+      "Z-Wave",
+      "802.11ac",
+      "Wi-Fi 6",
+      "NFC",
+      "CSMA/CA",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 4,
+    "explicacion": "NFC (Near Field Communication) funciona por acoplamiento inductivo magnético en distancias de pocos centímetros."
+  },
+  {
+    "id": 72,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "El esquema de datagrama IP nace con la necesidad de trabajar con redes heterogéneas y permite el paso de un cuadro de una red a otra respetando el paquete original de manera tal de encapsularlo y que el mismo no sea modificado mientras se realice la transmisión.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. El esquema de datagramas IP permite transportar paquetes encapsulados entre diferentes redes heterogéneas."
+  },
+  {
+    "id": 73,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del esquema de protocolo TCP/IP, cuando hablamos de un puerto nos referimos a:",
+    "opciones": [
+      "Identificador único de un nodo",
+      "Identificador único de un computador",
+      "Identificador único de un servicio",
+      "Identificador único de red",
+      "A y C son correctas",
+      "A y B son correctas",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El puerto en TCP/UDP identifica un servicio o proceso específico dentro de un equipo (ej. puerto 80 para HTTP, 443 para HTTPS)."
+  },
+  {
+    "id": 74,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Una red tiene una combinación de hardware y software heterogéneo que entrega al usuario la apariencia de un sistema de comunicación integrado y uniforme al cual se conectan muchas computadoras. Se lo denomina:",
+    "opciones": [
+      "LAN",
+      "Red virtual",
+      "ISP",
+      "VPN",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Una red virtual ofrece una abstracción uniforme e integrada de los recursos de comunicación independientemente de la infraestructura física subyacente."
+  },
+  {
+    "id": 75,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "La agrupación lógica de dispositivos y usuarios que están agrupados por función, aplicación o departamento, sin tener en cuenta la ubicación del segmento físico, se denomina:",
+    "opciones": [
+      "LAN",
+      "Red virtual",
+      "ISP",
+      "VPN",
+      "VLAN",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 4,
+    "explicacion": "Una VLAN (Virtual LAN) agrupa dispositivos de forma lógica independientemente de su ubicación física en el cableado o switches."
+  },
+  {
+    "id": 76,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del modelo de protocolo TCP/IPv4, la capa de Internet cumple las siguientes funciones: encaminar mensajes entre redes, interactuar con routers y gateways, utilizar protocolos IP y ARP, e implementar direcciones IP.",
+    "opciones": [
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La capa de Internet (o de Red) gestiona el direccionamiento lógico IP, la resolución ARP y el encaminamiento de paquetes entre redes."
+  },
+  {
+    "id": 77,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del esquema de protocolo TCP/IPv4, el esquema de direccionamiento abstracto tiene como objetivo: ocultar detalles de redes físicas ofreciendo características de red virtual y definir un esquema abstracto asignando a cada host una dirección única.",
+    "opciones": [
+      "Definir un sistema de direccionamiento físico basado en componentes",
+      "Ocultar detalles de redes físicas y ofrecer características de una red virtual",
+      "Definir un esquema de direccionamiento abstracto asignando a cada host una dirección única",
+      "Definir un esquema automático variable",
+      "A y C son correctas",
+      "B y C son correctas",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 5,
+    "explicacion": "El direccionamiento IP oculta la física subyacente (B) y asigna una dirección lógica única a cada equipo (C)."
+  },
+  {
+    "id": 78,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del modelo de protocolo de Internet, los protocolos de transporte utilizados en la capa Host a Host son IP y UDP.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Falso. Los protocolos principales de la capa de transporte son TCP y UDP. IP pertenece a la capa de Internet/Red."
+  },
+  {
+    "id": 79,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del esquema del protocolo TCP/IP, cuando nos referimos a ARP estamos haciendo mención de:",
+    "opciones": [
+      "El protocolo de resolución de dirección",
+      "Un protocolo para intercambio de archivos y correo electrónico",
+      "Un algoritmo de compresión de datos",
+      "Un algoritmo de encriptación de datos",
+      "A y C son correctas",
+      "B y D son correctas",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "ARP (Address Resolution Protocol) resuelve direcciones IP obteniendo la dirección física MAC correspondiente en la red local."
+  },
+  {
+    "id": 80,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del esquema de protocolo TCP/IP, el router utiliza un protocolo que permite informar a los routers vecinos que se encuentran fuera de servicio o congestionados. Con las opciones dadas (H.323, ARP, DNS, NAT), la respuesta es:",
+    "opciones": [
+      "H.323",
+      "ARP",
+      "DNS",
+      "NAT",
+      "A y B son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 5,
+    "explicacion": "Ninguna de las opciones listadas (H.323, ARP, DNS, NAT) cumple esa función (la cual correspondería a protocolos como ICMP o protocolos de ruteo como OSPF/RIP)."
+  },
+  {
+    "id": 81,
+    "categoria": "TCP/IP, VLAN y ARP",
+    "pregunta": "Dentro del esquema de protocolo TCP/IP, los componentes que intervienen en el proceso de comunicación son: routers, computadoras host y la pila de protocolos TCP/IP.",
+    "opciones": [
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el proceso de comunicación TCP/IP intervienen los hosts emisores/receptores, los routers intermediarios y la pila de protocolos TCP/IP."
+  },
+  {
+    "id": 82,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "El router fronterizo (intranet/extranet) tiene dos o más conexiones balanceadas dentro de un host o nodo multibase y trabaja soportando bajo el protocolo:",
+    "opciones": [
+      "ICMP",
+      "BGP",
+      "SMTP",
+      "FTP",
+      "SNMP",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "BGP (Border Gateway Protocol) se utiliza en routers fronterizos para intercambiar información de enrutamiento entre sistemas autónomos."
+  },
+  {
+    "id": 83,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Dentro del esquema TCP/IPv4, la dirección IP corresponde a un número de 32 bits asignado a un host y usado por todas las comunicaciones con él, aplicando un esquema jerárquico que utiliza prefijo para red y sufijo para host.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. Una dirección IPv4 posee 32 bits divididos jerárquicamente en prefijo de red y sufijo de host."
+  },
+  {
+    "id": 84,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Dentro de una red de dominio con recursos compartidos, la acción de copiar los cuadros en las interfaces de red realizada por un concentrador (hub) se denomina:",
+    "opciones": [
+      "Enrutamiento",
+      "Conmutación",
+      "Difusión",
+      "Cacheo",
+      "Ubicación",
+      "Copia",
+      "Aviso",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Un concentrador replica y transmite las señales hacia todos sus puertos, realizando una difusión (broadcast)."
+  },
+  {
+    "id": 85,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "La interfaz de programación de aplicaciones (API) que interactúa entre el sistema operativo y los protocolos para trabajar con aplicaciones concurrentes utilizando un grupo de protocolos y puerto deseado se denomina:",
+    "opciones": [
+      "Puerto",
+      "Interrupción",
+      "API de socket",
+      "Protocolo",
+      "Servicio",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La API de socket (Socket API) permite a las aplicaciones programadas enviar y recibir datos mediante protocolos como TCP y UDP."
+  },
+  {
+    "id": 86,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Un cuadro o trama identificable en una LAN contiene campos como: preámbulo, dirección destino, dirección origen, tipo de paquete, campo de datos y campo CRC.",
+    "opciones": [
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Esta estructura describe los campos fundamentales de una trama de red Ethernet a nivel de capa de enlace de datos."
+  },
+  {
+    "id": 87,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "El protocolo simple de gestión de red utilizado por los monitores de red para revelar y controlar el desempeño de terminales en la misma se denomina:",
+    "opciones": [
+      "ICMP",
+      "BGP",
+      "SMTP",
+      "FTP",
+      "SNMP",
+      "Ninguno es correcto"
+    ],
+    "respuestaCorrecta": 4,
+    "explicacion": "SNMP (Simple Network Management Protocol) es el estándar utilizado para la administración y monitoreo de dispositivos de red."
+  },
+  {
+    "id": 88,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Algunos cuadros no identificables se caracterizan por no incluir un campo de tipo cabecera de cuadro. Por lo tanto establecen:",
+    "opciones": [
+      "Acuerdo previo entre emisor y receptor en el formato de datos a enviar",
+      "Envío de una señal de sincronismo por canal secundario de dos módem",
+      "Acuerdo de almacenar el primer byte como tipo",
+      "A y B son correctas",
+      "B y C son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Al no poseer cabecera que identifique la estructura, el emisor y el receptor deben acordar previamente el formato exacto de los datos."
+  },
+  {
+    "id": 89,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Dentro del esquema de protocolo TCP/IPv4, de acuerdo con la cantidad máxima de redes y cantidad máxima de hosts por red, se define la clase de la red (Clase A, B o C).",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. En el direccionamiento con clases (Classful) clásico, A, B y C se definen según la división de bits de red y host."
+  },
+  {
+    "id": 90,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Una red compartida con topología estrella y un conmutador (switch) de capa 2 del modelo OSI se vale de direcciones para filtrar los cuadros de entrada. Dichas direcciones corresponden a:",
+    "opciones": [
+      "Direcciones físicas",
+      "Direcciones dinámicas",
+      "Direcciones estáticas",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Un switch de capa 2 commuta y filtra tramas basándose en las direcciones MAC (direcciones físicas)."
+  },
+  {
+    "id": 91,
+    "categoria": "TCP/IP, Ethernet y Redes",
+    "pregunta": "Dentro del esquema TCP/IPv4, cuando nos referimos a un host multibase (multihomed), estamos hablando de:",
+    "opciones": [
+      "Un host que se conecta a una sola conexión de red",
+      "Un host que se conecta a varias conexiones de red",
+      "Un host que tiene definida una intranet",
+      "Un host que tiene definidas zonas dentro de su intranet",
+      "A y C son correctas",
+      "B y D son correctas",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Un host multibase (multihomed) cuenta con múltiples interfaces de red para conectarse a varias redes simultáneamente."
+  },
+  {
+    "id": 92,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "El Protocolo de Internet versión 4 (IPv4) con los cambios tecnológicos permitió: (A) Manejo de redes homogéneas exclusivamente, (B) Manejo de redes heterogéneas, (C) Modelo de direcciones independientes del hardware, (D) Modelo de direcciones dependientes del hardware.",
+    "opciones": [
+      "Manejo de redes homogéneas exclusivamente",
+      "Manejo de redes heterogéneas",
+      "Modelo de direcciones independientes del hardware",
+      "Modelo de direcciones dependientes del hardware",
+      "B y C son correctas",
+      "A y D son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 4,
+    "explicacion": "IPv4 permite interconectar redes heterogéneas (B) e implementa un modelo de direcciones lógicas independientes del hardware físico (C)."
+  },
+  {
+    "id": 93,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "Dentro de la estructura del protocolo H.323 para telefonía IP, el Gatekeeper tiene la función de:",
+    "opciones": [
+      "Iniciar la llamada",
+      "Autorizar y rutear la llamada",
+      "Convertir los paquetes IP en paquetes de voz",
+      "Realizar un control de multipunto",
+      "Controlar el clúster redundante",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El Gatekeeper en H.323 se encarga de la autorización, resolución de direcciones y ruteo/gestión de las llamadas VoIP."
+  },
+  {
+    "id": 94,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "Los protocolos más utilizados para la señalización y establecimiento de llamadas en telefonía sobre IP (VoIP) corresponden a: (A) ICMP, (B) H.323, (C) SMTP, (D) SIP.",
+    "opciones": [
+      "ICMP",
+      "H.323",
+      "SMTP",
+      "SIP",
+      "A y B son correctas",
+      "B y D son correctas (H.323 y SIP)",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 5,
+    "explicacion": "H.323 y SIP son los estándares principales para señalización y gestión de sesiones en Telefonía IP (VoIP)."
+  },
+  {
+    "id": 95,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "Dentro de IPv6, la estructura de la dirección se divide habitualmente en: (A) Primeros 48 bits: prefijo del sitio, (B) Primeros 32 bits: sufijo, (C) Siguientes 16 bits: identificador de subred, (E) Últimos 64 bits: identificador de interfaz/MAC.",
+    "opciones": [
+      "A, C y E son correctas (48 bits prefijo, 16 bits subred, 64 bits interfaz)",
+      "B y D son correctas",
+      "Todas son correctas",
+      "Ninguna es correcta"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "En el esquema tradicional de 128 bits de IPv6 se consideran 48 bits de prefijo global + 16 bits de subred + 64 bits para el identificador de interfaz."
+  },
+  {
+    "id": 96,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "IPv6 posee un espacio de direcciones de 128 bits. Los cambios en las cabeceras del datagrama, incluyendo el campo Flow Label para el manejo de flujos continuos de datos, permiten mejorar la transmisión de audio y video.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. El campo Flow Label en la cabecera IPv6 de 128 bits optimiza el tratamiento de paquetes pertenecientes a transmisiones continuas de tiempo real (audio/video)."
+  },
+  {
+    "id": 97,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "El protocolo estándar utilizado para mostrar información en pequeñas pantallas mediante conexiones celulares, basado en Wireless Markup Language (WML) y similar a HTML, se denomina:",
+    "opciones": [
+      "WHOIS",
+      "ICMP",
+      "Traceroute",
+      "WAP",
+      "Spoofing",
+      "Ninguno es correcto"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "WAP (Wireless Application Protocol) permitía a dispositivos móviles de primeras generaciones acceder a páginas web adaptadas mediante WML."
+  },
+  {
+    "id": 98,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "El esquema de datagrama IP nace con la necesidad de trabajar con redes homogéneas exclusivamente y permite el paso de un cuadro respetando el paquete de manera que al encapsularlo el mismo sea modificado durante la transmisión.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Falso. IP nació para redes heterogéneas (no homogéneas) y el paquete original no debe ser modificado arbitrariamente durante el transporte."
+  },
+  {
+    "id": 99,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "El proxy WAP traduce las peticiones WAP a peticiones Web para que el cliente solicite información al servidor Web, y codifica las respuestas en un formato binario compacto interpretable por el cliente móvil.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Verdadero. El Proxy WAP actúa como puente traductor y compresor binario entre WML/WAP y HTTP/HTML."
+  },
+  {
+    "id": 100,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "Dentro del esquema TCP/IPv4, de acuerdo con la cantidad mínima de redes y la cantidad mínima de hosts por red, se define la clase de la red que estamos evaluando para determinar si es clase A, B o C.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Falso (según criterio formal de examen). La clase A, B o C se define directamente por los primeros bits iniciales del octeto (0, 10, 110), no por una regla de cantidad mínima."
+  },
+  {
+    "id": 101,
+    "categoria": "IPv4, IPv6, VoIP y WAP",
+    "pregunta": "Dentro del esquema TCP/IPv4, la dirección IP corresponde a un número de 34 bits asignado a un host y utilizado para todas las comunicaciones con él.",
+    "opciones": [
+      "Verdadero",
+      "Falso"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Falso. Las direcciones de protocolo IPv4 poseen 32 bits de longitud, no 34 bits."
+  },
+  {
+    "id": 102,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "En comandos Cisco IOS, ¿cuál de las siguientes opciones es la correcta para pasar de modo usuario (Router>) a modo privilegiado (Router#)?",
+    "opciones": [
+      "Exit",
+      "Enable password",
+      "Enable",
+      "Enable secret",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El comando `enable` en el prompt Router> permite ingresar al modo privilegiado (EXEC privilegiado Router#)."
+  },
+  {
+    "id": 103,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "¿Cuál de los siguientes comandos se utiliza en un router Cisco para visualizar la tabla de ruteo IPv4?",
+    "opciones": [
+      "Show Router",
+      "Show Debug",
+      "Show ip route",
+      "Show interfaces",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "`show ip route` despliega la tabla de enrutamiento IPv4 activa en el router."
+  },
+  {
+    "id": 104,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "Respecto a los protocolos de ruteo dinámico, ¿cuál de las siguientes opciones es verdadera?",
+    "opciones": [
+      "RIP – Vector Distancia Enlace",
+      "EIGRP – Estado de Enlace",
+      "OSPF – Estado de enlace",
+      "BGP – Vector distancia Mejorado",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "OSPF es un protocolo de estado de enlace (Link State), mientras que RIP es vector distancia tradicional."
+  },
+  {
+    "id": 105,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "Dado el esquema de red, ¿cuál de los siguientes comandos de ruta estática es el correcto para alcanzar la red destino 20.0.0.0/8 a través del siguiente salto 172.168.1.1?",
+    "opciones": [
+      "ip route 20.0.0.0 255.0.0.0 172.168.1.1",
+      "ip route 20.0.0.0 255.0.0.0 192.168.1.1",
+      "ip route 20.0.0.0 255.0.0.0 222.168.1.1",
+      "ip route 20.0.0.0 255.0.0.0 072.168.1.1",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La sintaxis de una ruta estática en Cisco es: `ip route [red_destino] [máscara] [ip_siguiente_salto]`."
+  },
+  {
+    "id": 106,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "¿Cuál de los siguientes comandos es válido para iniciar la configuración del protocolo de ruteo dinámico EIGRP con el sistema autónomo 200?",
+    "opciones": [
+      "Router AFT",
+      "Router EIGRP 200",
+      "Router FTP",
+      "Router OPDF",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "`router eigrp 200` inicia el proceso de enrutamiento EIGRP asociándolo al Autonomous System 200."
+  },
+  {
+    "id": 107,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "En la configuración de un protocolo de ruteo dinámico en un router, ¿qué redes deben especificarse con el comando network?",
+    "opciones": [
+      "Las redes correspondientes a toda la red global",
+      "Las redes directamente conectadas al Router",
+      "Las Subredes del Sistema Autónomo exclusivamente",
+      "Las redes directamente conectadas al Firewall",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Se configuran las redes directamente conectadas al router para que este comience a publicitarlas y enviar/recibir actualizaciones de ruteo."
+  },
+  {
+    "id": 108,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "Indique la secuencia correcta de comandos en Cisco IOS para ingresar al modo de configuración global:",
+    "opciones": [
+      "Router> -> enable -> Router# configure terminal -> Router(config_if)#",
+      "Router> -> enable -> Router# configure terminal -> Router(config)#",
+      "Router> -> enable -> Router# configure interface -> Router(config)#",
+      "Router> -> enable -> Router# RIP",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La secuencia estándar es pasar a modo privilegiado con `enable` y luego a configuración global con `configure terminal`."
+  },
+  {
+    "id": 109,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "¿Cuál de los siguientes comandos es válido para anunciar una red en la configuración de un protocolo de ruteo?",
+    "opciones": [
+      "Network RIP",
+      "Network \"Nro. de red\"",
+      "Network Sist Autonomo",
+      "Network \"Nro IP + Máscara\"",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El comando `network [Nro_de_red]` habilita el protocolo en las interfaces que pertenecen a esa dirección de red."
+  },
+  {
+    "id": 110,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "Para ingresar al modo de configuración global en Cisco IOS, la acción se debe realizar desde:",
+    "opciones": [
+      "Modo Usuario",
+      "Modo dinámico",
+      "Modo global",
+      "Modo privilegiado",
+      "Modo protegido",
+      "Ninguna de las anteriores"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Desde el modo EXEC privilegiado (`Router#`), ejecutamos `configure terminal` para acceder al modo de configuración global (`Router(config)#`)."
+  },
+  {
+    "id": 111,
+    "categoria": "Cisco y Protocolos de Enrutamiento",
+    "pregunta": "¿Cuál de las siguientes opciones muestra la secuencia y comandos correctos para asignar una dirección IP a una interfaz serial en Cisco IOS?",
+    "opciones": [
+      "(Router_config)# interface serial 0/0 -> (Router_config)# Ip address 192.168.1.2 255.255.0",
+      "(Router_config)# interface serial 0/0 -> (Router_config_if)# Ip address 192.168.1.2 255.255.255.0",
+      "(Router_config)# interface serial_ethernet 0/0 -> (Router_config_if)# Ip address 192.168.1.2 255.255.255.0",
+      "Ninguna de las anteriores es correcta"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Desde `Router(config)#` ingresamos a la interfaz con `interface serial 0/0` (pasando al prompt `Router(config-if)#`) y asignamos `ip address IP MÁSCARA`."
+  }
+]

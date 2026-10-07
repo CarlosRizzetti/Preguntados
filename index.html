@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyLab - Test de Estudio Interactivo (Multiple Choice)</title>
+  <meta name="description" content="Plataforma de estudio con preguntas de opción múltiple cargadas dinámicamente desde JSON. Ideal para repasar materias y auto-evaluarse." />
+  
+  <!-- Preconnect y Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div id="app" class="app-container">
+    
+    <!-- Navbar Header -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/><path d="M6 14h6"/></svg>
+        </div>
+        <div class="brand-text">
+          <h1>Study<span>Lab</span></h1>
+          <span class="version-tag">JSON Quiz Engine</span>
+        </div>
+      </div>
+      
+      <div class="header-actions">
+        <button id="btn-load-json" class="btn btn-secondary btn-sm" title="Cargar o cambiar archivo JSON de preguntas">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span>Cargar JSON</span>
+        </button>
+        
+        <button id="btn-toggle-sound" class="btn btn-icon" title="Activar/Desactivar Sonido">
+          <svg class="icon-sound-on" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+          <svg class="icon-sound-off hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M23 9l-6 6"/><path d="M17 9l6 6"/></svg>
+        </button>
+
+        <button id="btn-toggle-theme" class="btn btn-icon" title="Cambiar Tema (Oscuro/Claro)">
+          <svg class="icon-sun hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Dynamic Content Container -->
+    <main class="main-content">
+      
+      <!-- SCREEN 1: Inicio / Configuración -->
+      <section id="screen-start" class="screen active">
+        <div class="hero-card glass-panel">
+          <div class="hero-badge">
+            <span class="dot-pulse"></span>
+            <span id="bank-count-label">Cargando banco de preguntas...</span>
+          </div>
+          
+          <h2 class="hero-title">Pon a prueba tus conocimientos</h2>
+          <p class="hero-subtitle">
+            Ponte a prueba con este test dinámico de <strong>10 preguntas con multiple choice</strong>. Las preguntas son seleccionadas aleatoriamente del banco JSON editable.
+          </p>
+
+          <div class="stats-overview">
+            <div class="stat-box">
+              <div class="stat-icon icon-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="stat-data">
+                <span id="stat-total-questions" class="stat-value">0</span>
+                <span class="stat-label">Preguntas en JSON</span>
+              </div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-icon icon-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="stat-data">
+                <span class="stat-value">10</span>
+                <span class="stat-label">Preguntas por Test</span>
+              </div>
+            </div>
+
+            <div class="stat-box">
+              <div class="stat-icon icon-emerald">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div class="stat-data">
+                <span id="stat-categories-count" class="stat-value">0</span>
+                <span class="stat-label">Categorías</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modos de Evaluación -->
+          <div class="quiz-options-group">
+            <label class="option-label-title">Selecciona el Modo de Evaluación:</label>
+            <div class="mode-selector">
+              <label class="mode-card active">
+                <input type="radio" name="quiz-mode" value="practice" checked>
+                <div class="mode-content">
+                  <div class="mode-header">
+                    <span class="mode-title">⚡ Modo Práctica (Recomendado)</span>
+                    <span class="mode-badge">Feedback Inmediato</span>
+                  </div>
+                  <p class="mode-desc">Te indicará si acertaste o no inmediatamente al seleccionar una opción, mostrando explicaciones detalladas.</p>
+                </div>
+              </label>
+
+              <label class="mode-card">
+                <input type="radio" name="quiz-mode" value="exam">
+                <div class="mode-content">
+                  <div class="mode-header">
+                    <span class="mode-title">🎓 Modo Examen</span>
+                    <span class="mode-badge badge-neutral">Evaluación Final</span>
+                  </div>
+                  <p class="mode-desc">Respondes las 10 preguntas sin interrupciones y descubres tu nota final junto con la revisión al terminar.</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="action-bar">
+            <button id="btn-start-quiz" class="btn btn-primary btn-lg btn-glow">
+              <span>Comenzar Test de 10 Preguntas</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+          
+          <div class="json-source-info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span>Archivo cargado actualmente: <code id="active-json-filename">preguntas.json</code>. Puedes editarlo en Visual Studio o subir otro en cualquier momento.</span>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- SCREEN 2: Test / Cuestionario en Curso -->
+      <section id="screen-quiz" class="screen">
+        <div class="quiz-card glass-panel">
+          
+          <!-- Top Bar del Cuestionario -->
+          <div class="quiz-header-bar">
+            <div class="quiz-progress-info">
+              <span id="quiz-question-number" class="question-step">Pregunta 1 de 10</span>
+              <span id="quiz-category-pill" class="category-pill">Categoría</span>
+            </div>
+            
+            <div id="quiz-timer-box" class="quiz-timer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span id="quiz-timer-text">00:00</span>
+            </div>
+          </div>
+
+          <!-- Barra de Progreso Animada -->
+          <div class="progress-bar-container">
+            <div id="quiz-progress-fill" class="progress-bar-fill" style="width: 10%;"></div>
+          </div>
+
+          <!-- Pregunta -->
+          <div class="question-container">
+            <h3 id="question-text" class="question-title">Cargando pregunta...</h3>
+          </div>
+
+          <!-- Opciones de Respuesta -->
+          <div id="options-grid" class="options-grid">
+            <!-- Las opciones se generan dinámicamente con JS -->
+          </div>
+
+          <!-- Caja de Explicación y Feedback -->
+          <div id="explanation-box" class="explanation-box hidden">
+            <div class="explanation-header">
+              <div id="explanation-status-icon" class="status-icon"></div>
+              <span id="explanation-status-title" class="status-title">¡Respuesta Correcta!</span>
+            </div>
+            <p id="explanation-text" class="explanation-body">Explicación detallada de la respuesta...</p>
+          </div>
+
+          <!-- Footer y Navegación -->
+          <div class="quiz-footer">
+            <button id="btn-quit-quiz" class="btn btn-ghost btn-sm" title="Abandonar el test actual">
+              ← Salir al inicio
+            </button>
+            <button id="btn-next-question" class="btn btn-primary btn-md disabled" disabled>
+              <span>Siguiente Pregunta</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- SCREEN 3: Resultados Finales -->
+      <section id="screen-results" class="screen">
+        <div class="results-card glass-panel">
+          
+          <div class="results-header text-center">
+            <div id="score-ring-container" class="score-ring-container">
+              <svg class="score-ring" viewBox="0 0 120 120">
+                <circle class="score-ring-bg" cx="60" cy="60" r="52"></circle>
+                <circle id="score-ring-fill" class="score-ring-fill" cx="60" cy="60" r="52" stroke-dasharray="326.72" stroke-dashoffset="326.72"></circle>
+              </svg>
+              <div class="score-ring-text">
+                <span id="results-score-percent" class="score-percent">0%</span>
+                <span id="results-score-fraction" class="score-fraction">0 / 10</span>
+              </div>
+            </div>
+
+            <h2 id="results-badge-title" class="results-title">¡Excelente Desempeño!</h2>
+            <p id="results-message" class="results-subtitle">Has completado el test con éxito.</p>
+          </div>
+
+          <!-- Tarjetas de Métricas -->
+          <div class="metrics-grid">
+            <div class="metric-box correct">
+              <div class="metric-value" id="metric-correct-count">0</div>
+              <div class="metric-label">Correctas</div>
+            </div>
+            <div class="metric-box incorrect">
+              <div class="metric-value" id="metric-incorrect-count">0</div>
+              <div class="metric-label">Incorrectas</div>
+            </div>
+            <div class="metric-box time">
+              <div class="metric-value" id="metric-total-time">00:00</div>
+              <div class="metric-label">Tiempo Total</div>
+            </div>
+          </div>
+
+          <!-- Acordeón de Revisión Pregunta por Pregunta -->
+          <div class="review-section">
+            <h3 class="review-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Desglose y Revisión de Preguntas
+            </h3>
+            <div id="review-list" class="review-list">
+              <!-- Las preguntas respondidas se listan aquí -->
+            </div>
+          </div>
+
+          <!-- Botones de Acción -->
+          <div class="results-actions">
+            <button id="btn-restart-quiz" class="btn btn-primary btn-lg btn-glow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+              <span>Hacer Otro Test (10 Preguntas)</span>
+            </button>
+            <button id="btn-back-home" class="btn btn-secondary btn-lg">
+              <span>Volver a la Pantalla Principal</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- MODAL: Cargar / Cambiar JSON -->
+    <div id="json-modal" class="modal-overlay hidden">
+      <div class="modal-card glass-panel">
+        <div class="modal-header">
+          <h3>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Cargar preguntas desde JSON
+          </h3>
+          <button id="btn-close-modal" class="btn-close" title="Cerrar modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+          <p class="modal-description">
+            Puedes cargar tu propio archivo <code>.json</code> desde tu computadora o seguir usando el archivo <code>public/preguntas.json</code> de tu proyecto en Visual Studio Code.
+          </p>
+
+          <!-- Zona de Drag and Drop -->
+          <div id="drop-zone" class="drop-zone">
+            <div class="drop-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <p class="drop-text">Arrastra y suelta tu archivo <strong>.json</strong> aquí</p>
+            <span class="drop-or">o también</span>
+            <label for="file-input-json" class="btn btn-secondary btn-sm">
+              Seleccionar Archivo Local
+            </label>
+            <input type="file" id="file-input-json" accept=".json" class="hidden" />
+          </div>
+
+          <!-- Estado / Feedback de Validación -->
+          <div id="json-validation-status" class="validation-status hidden">
+            <!-- Mensaje dinámico de éxito o error -->
+          </div>
+
+          <!-- Guía rápida de estructura JSON -->
+          <div class="json-guide">
+            <h4>Formato requerido en tu JSON (editable en VS Code):</h4>
+            <pre><code class="code-block">[
+  {
+    "id": 1,
+    "categoria": "Historia",
+    "pregunta": "¿En qué año se independizó Argentina?",
+    "opciones": ["1810", "1816", "1825", "1853"],
+    "respuestaCorrecta": 1,
+    "explicacion": "El 9 de julio de 1816 se declaró la independencia en Tucumán."
+  }
+]</code></pre>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button id="btn-reset-default-json" class="btn btn-ghost btn-sm">
+            Restablecer a preguntas.json original
+          </button>
+          <button id="btn-modal-cancel" class="btn btn-secondary btn-sm">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
